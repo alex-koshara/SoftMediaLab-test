@@ -14,9 +14,6 @@ const Input: React.FC<InputProps> = ({ placeholder = '', period}) => {
   const getInputLabel = (): string => {
     let text = '';
     switch (period) {
-      case RadioValues.mounth:
-        text = '';
-        return text;
       case RadioValues.day:
         text = 'в день';
         return text;

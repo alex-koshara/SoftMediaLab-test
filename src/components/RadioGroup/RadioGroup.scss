@@ -1,0 +1,20 @@
+.radio-group__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.radio-group__title {
+  color: #908e8e;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+.radio-group__item {
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

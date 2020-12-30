@@ -1,0 +1,15 @@
+.input__control {
+  border-radius: 14px;
+  border: 1px solid #908e8e;
+  padding: 3px 10px;
+
+  &:hover {
+    outline: none;
+  }
+}
+
+.input__control::-webkit-outer-spin-button,
+.input__control::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+}

@@ -1,0 +1,39 @@
+.checkbox {
+  display: flex;
+}
+
+.chekcbox__left-label {
+  margin-right: 10px;
+}
+
+.checkbox__label {
+  color: #908e8e;
+
+  &--active {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.checkbox__control {
+
+
+  &:checked {
+    background-color: orange;
+    border-color: orange;
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(orange, .25);
+      border-color: orange;
+      // Переопределение бутстрап стилей (для ревьювера)
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+    }
+  }
+
+  &:focus {
+    // Переопределение бутстрап стилей (для ревьювера)
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e") !important;
+    box-shadow: 0 0 0 0.25rem rgba(#908e8e, .25);
+    border-color: #908e8e;
+  }
+}

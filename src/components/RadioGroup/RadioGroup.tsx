@@ -29,7 +29,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({radioData, value}) => {
 }
 
 const mapStateToProps = (state: IFormStates) => ({
-  value: state.form.simple?.values.period
+  value: state.form.simple.values.period
 })
 
 const Connected = connect(mapStateToProps)(RadioGroup)

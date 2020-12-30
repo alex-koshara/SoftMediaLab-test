@@ -28,8 +28,8 @@ const Checkbox: React.FC<CheckboxProps> = ({checked = false}) => {
 }
 
 const mapStateToProps = (state: IFormStates) => ({
-  checked: state.form.simple?.values.ndfl
+  checked: state.form.simple.values.ndfl
 })
 
 const Connected = connect(mapStateToProps)(Checkbox)
-export  { Connected as Checkbox}
+export { Connected as Checkbox}

@@ -20,11 +20,11 @@ const InformerNdfl: React.FC<InformerNdflProps> = ({salary, ndfl, period}) => {
 
   return (
     period === showPeriod
-      ?   <div className="informer-ndfl">
-            <p className="informer-ndfl__text"><b>{salaryOnHands} &#8381;</b> сотрудник будет получать на руки</p>
-            <p className="informer-ndfl__text"><b>{ndflSumValue} &#8381;</b> НДФЛ, {NDFL_PERCENT}% от оклада</p>
-            <p className="informer-ndfl__text"><b>{totalSum} &#8381;</b> за сотрудника в месяц</p>
-          </div>
+      ? <div className="informer-ndfl">
+          <p className="informer-ndfl__text"><b>{salaryOnHands} &#8381;</b> сотрудник будет получать на руки</p>
+          <p className="informer-ndfl__text"><b>{ndflSumValue} &#8381;</b> НДФЛ, {NDFL_PERCENT}% от оклада</p>
+          <p className="informer-ndfl__text"><b>{totalSum} &#8381;</b> за сотрудника в месяц</p>
+        </div>
       : null
   )
 }

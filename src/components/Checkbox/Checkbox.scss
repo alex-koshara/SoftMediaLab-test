@@ -2,17 +2,17 @@
   display: flex;
 }
 
-.chekcbox__left-label {
+.checkbox__left-label {
   margin-right: 10px;
 }
 
 .checkbox__label {
   color: #908e8e;
+}
 
-  &--active {
-    color: black;
-    font-weight: bold;
-  }
+.checkbox__label.checkbox__label--active {
+  color: black;
+  font-weight: bold;
 }
 
 .checkbox__control {
